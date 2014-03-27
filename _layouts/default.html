@@ -12,6 +12,9 @@
     <link rel="alternate" type="application/rss+xml" title="ckan &raquo; Feed" href="/feed/" />
     <link rel="alternate" type="application/rss+xml" title="ckan &raquo; Comments Feed" href="/comments/feed/" />
 
+<link rel='stylesheet' id='admin-bar-css'  href='http://ckan.org/wp-includes/css/admin-bar.min.css?ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='bp-admin-bar-css'  href='http://ckan.okfn.org/wp-content/plugins/buddypress/bp-core/css/admin-bar.css?ver=1.6.4' type='text/css' media='all' />
+
     <link rel='stylesheet' id='okf-transparent-cookie-bar-css'  href='http://ckan.okfn.org/wp-content/mu-plugins/okfn-utility/css/cookie-bar.css?ver=3.6' type='text/css' media='all' />
     <link rel='stylesheet' id='okf-panel-master-frontend-css'  href='http://ckan.okfn.org/wp-content/plugins/okf-panel-master/assets/css/frontend.css' type='text/css' media='all' />
     <link rel='stylesheet' id='okf-wordpress-footer-frontend-css'  href='http://ckan.okfn.org/wp-content/plugins/okf-wordpress-footer/assets/css/frontend.css' type='text/css' media='all' />
@@ -195,7 +198,7 @@
       <a class="corner ribbon" href="http://okfn.org/support" >
         Support Us
       </a>
-            <header class="has-subheader">
+      <header class="has-subheader">
       <div class="navbar">
         <div class="navbar-inner">
           <div class="container">
@@ -283,12 +286,25 @@
 
       <div class="sub-header">
         <div class="container">
-          <div class="row">
-            <div class="span8">
-                          </div>
-            <div class="span4">
-                          </div>
-          </div>
+          {% if page.breadcrumbs %}
+          <ul class="breadcrumb">
+            <li>
+              <a href="/">Home</a>
+            </li>
+
+            {% for pair in page.breadcrumbs %}
+              {% for item in pair %}
+                <span class="delimiter">/</span>
+                {% if item[1] == '' %}
+                  {{item[0]}}
+                {% else %}
+                  <a href="{{item[1]}}">{{item[0]}}</a>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+
+          </ul>
+          {% endif %}
         </div>
       </div>
 

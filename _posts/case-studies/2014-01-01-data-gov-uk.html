@@ -1,0 +1,69 @@
+---
+layout: default
+categories: case-study
+summary: ""
+date: 2014-01-01
+title: "data.gov.uk Case Study"
+permalink: /case-studies/data-gov-uk
+breadcrumbs:
+    - Case studies: /case-studies/
+    - Data.gov.uk: ''
+---
+<div class="row">
+    <div id="content" class="span12">
+        <div class="padder one-column">
+
+
+        <div class="page" id="blog-page" role="main">
+
+
+                <h1 class="pagetitle">data.gov.uk</h1>
+
+                <div id="post-882" class="post-882 page type-page status-publish hentry">
+
+                    <div class="entry">
+
+                        <p><a href="http://data.gov.uk/" title="Go to data.gov.uk">data.gov.uk</a> is the official Open Data portal of the UK Government. The site provides a central way into the wealth of government data, and aims to make that data &#8216;easy to find, easy to license, and easy to re-use.&#8217; A beta version went live in October 2009, and the site was <a href="http://www.guardian.co.uk/technology/blog/2010/jan/21/timbernerslee-government-data">publicly launched by Sir Tim Berners-Lee</a>, the inventor of the World Wide Web, in January 2010.</p>
+
+<p>data.gov.uk is built using CKAN to catalogue, search and display data. (Other aspects of the site, such as blog posts, forums, comments, etc, are handled by Drupal, the open source CMS.) The Open Knowledge Foundation&#8217;s CKAN team were involved in the site from its inception, and helped develop and maintain it for the first two years. In early 2012 the UK government took its CKAN work in-house, but they continue to work closely with the CKAN team and make regular code contributions back to CKAN &#8211; a striking example of the advantages of open-source projects.</p>
+
+<div class="wp-caption alignnone" style="width: 510px"><img title="data.gov.uk" src="http://farm8.staticflickr.com/7130/7460617010_4026b5392a.jpg" alt="[IMG: The new data.gov.uk site]" width="500" height="392" /><p class="wp-caption-text">data.gov.uk: searching for data</p></div>
+
+<p>The site was originally designed with Drupal handling all page requests, and CKAN as a back-end catalogue service. CKAN&#8217;s rich metadata and search API made it possible to do this. However, by the time data.gov.uk <a href="http://data.gov.uk/blog/the-new-datagovuk">relaunched</a> in June 2012, <a href="http://data.gov.uk/blog/the-new-datagovuk-behind-the-scenes">it was clear</a> that CKAN&#8217;s excellent web interface provided a better search experience, while maintaining a Drupal module to handle these API calls was an unnecessary duplication of effort. Instead, all requests for data (the &#8216;Data&#8217; tab at data.gov.uk) are now sent by the web server straight to CKAN, while other tabs are handled by Drupal. This side-by-side CKAN / Drupal integration is described by David Read on the data.gov.uk blog <a href="http://data.gov.uk/blog/integrating-ckan-and-drupal">here</a>.</p>
+
+<p>The initial requirements for data.gov.uk were data catalogue capabilities (entering, editing, listing, and searching datasets) combined with basic CMS features (site content, blog, theming etc). In addition, CKAN has delivered in the following areas:</p>
+
+<ul>
+<li>Robustness</li>
+<li>Data validation and quality checking</li>
+<li>Editing workflow</li>
+<li>Complex search including faceting by tag, government department, theme, etc</li>
+<li>RDF representations of dataset metadata</li>
+<li>Integration with the Drupal content management system</li>
+<li>Support for geospatial metadata, especially in relation to INSPIRE requirements for search and discovery</li>
+<li>Automated ‘harvesting’ of metadata and material from 3rd sources within and outside government</li>
+<li>Graph previews and map visualisations for spreadsheet data</li>
+<li>General support and maintenance</li>
+</ul>
+
+<p>The data.gov.uk site, including its CKAN component, has also undergone penetration testing by UK government security testing consultants.</p>
+
+<p>The UK government continues to use and develop data.gov.uk, and the site has a global reputation as a leading exemplar of a government data portal. The system has successfully handled growth from a few dozen to many thousands of datasets, and a concomitant growth in site traffic. It has played a significant enabling role in the development of the UK government’s transparency and open data agenda.</p>
+
+<div class="wp-caption alignnone" style="width: 510px"><img title="data.gov.uk resource page" src="http://farm9.staticflickr.com/8457/8053396234_691481376d.jpg" alt="[IMG: data.gov.uk resource page]" width="500" height="362" /><p class="wp-caption-text">A data resource on data.gov.uk</p></div>
+
+<p>Andrew Stott, responsible for the launch of data.gov.uk while UK Government Director of Transparency &amp; Digital Engagement, had this to say: &#8220;Using Open Source was the best decision we ever made. A big thumbs up to the Open Knowledge Foundation and CKAN.&#8221;</p>
+
+
+                    </div>
+
+                </div>
+
+
+
+        </div><!-- .page -->
+
+
+        </div><!-- .padder -->
+    </div><!-- #content -->
+</div>
