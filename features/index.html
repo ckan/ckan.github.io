@@ -1,4 +1,378 @@
 ---
 layout: default
 title: Features
+breadcrumbs:
+    - Features: ''
 ---
+
+<div class="row">
+    <div id="content" class="span12">
+        <div class="padder one-column">
+
+
+        <div class="page" id="blog-page" role="main">
+
+
+                <h1 class="pagetitle">Feature Tour</h1>
+
+                <div id="post-3116" class="post-3116 page type-page status-publish hentry">
+
+                    <div class="entry">
+
+                        <div class="subnav">
+  <a href="#bp-default" class="right">Back to top</a><span class="separator"> | </span><a href="#publish">Publish</a><span class="separator"> | </span><a href="#search">Search</a><span class="separator"> | </span><a href="#geospatial">Geospatial</a><span class="separator"> | </span><a href="#community">Community</a><span class="separator"> | </span><a href="#visualise">Visualise</a><span class="separator"> | </span><a href="#themable">Themable</a><span class="separator"> | </span><a href="#store">Store</a><span class="separator"> | </span><a href="#history">History</a><span class="separator"> | </span><a href="#extend">Extend</a><span class="separator"> | </span><a href="#federate">Federate</a><span class="separator"> | </span><a href="#api">API</a>
+</div>
+
+<div class="striped" id="top">
+  <section class="full-width">
+  <h1>Feature Tour</h1>
+  CKAN is a fully-featured, mature, open source data management solution. CKAN provides a streamlined way to make your data discoverable and presentable. Each dataset is given its own page with a rich collection of metadata, making it a valuable and easily searchable resource. Check out our <a target="_blank" href="http://demo.ckan.org">live interactive demo</a>!
+  </section>
+  <section class="full-width">
+    <div class="row">
+      <div class="span3 feature-image" style="background-image: url('http://assets.okfn.org/p/ckan/img/icons/200/search-files.png');">
+        <h3>Publish &amp; find datasets</h3>
+        <a href="#publish">Publish</a> datasets via import or through a web interface. <a href="#search">Search</a> by keyword or filter by tags. See <a href="#search">dataset information</a> at a glance. Full change <a href="#history">history</a> lets you easily undo changes or view old versions.
+      </div>
+      <div class="span3 feature-image" style="background-image: url('http://assets.okfn.org/p/ckan/img/icons/200/store-visualise.png');">
+        <h3>Store &amp; manage data</h3>
+        <a href="#store">Store</a> the raw data and metadata. <a href="#visualise">Visualise</a> structured data with interactive tables, graphs and maps. Get statistics and usage metrics for your datasets. Search <a href="#geospatial">geospatial</a> data on a map by area.
+      </div>
+      <div class="span3 feature-image" style="background-image: url('http://assets.okfn.org/p/ckan/img/icons/200/engage.png');">
+        <h3>Engage with users &amp; others</h3>
+        <a href="#federate">Federate</a> networks with other CKAN nodes. <a href="#themable">Theme</a> with CSS or integrate with a CMS. Build a <a href="#community">community</a> with extensions that allow users to comment on and follow datasets.
+      </div>
+      <div class="span3 feature-image" style="background-image: url('http://assets.okfn.org/p/ckan/img/icons/200/extend.png');">
+        <h3>Customise &amp; extend</h3>
+        Use the <a href="#api">API</a>&#8216;s rich programming interface, and benefit from over 60 <a href="#extend">extensions</a> including link checking, comments, and analytics. CKAN&#8217;s <a href="/developers/about-ckan/">Open Source</a> licence allows you to download and run it for free.
+      </div>
+    </div>
+  </section>
+  <section id="publish" class="full-width">
+    <h2>Publish and Manage Data</h2>
+    <p>An intuitive web interface allows dataset publishers and curators to easily register, update and refine datasets in a distributed authorisation model called &#8216;Organizations&#8217;. &#8216;Organizations&#8217; allow each publisher to have their own dataset entry and approval process with numerous members. This means responsibility can be distributed and authorization access managed by each department or agencies&#8217; admins instead of centrally.</p>
+<div class="row">
+<div class="span6"><a href="/assets/img/Screen-Shot-2013-05-23-at-12.43.55.png"><img class="alignleft  wp-image-3031" src="/assets/img/Screen-Shot-2013-05-23-at-12.43.55.png" alt="Screenshot: Organizations" width="458" height="241" /></a></div>
+<div class="span6">
+<h3>Entering data</h3>
+<p>You can add and edit data in CKAN in many ways, including:</p>
+<ul>
+    <li>Directly via the web interface</li>
+    <li>Using CKAN&#8217;s rich JSON API</li>
+    <li>Via custom spreadsheet importers</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="span6"><a name="harvesting"></a>
+<h3>Harvesting</h3>
+<p>Many organisations already have their data in repositories with well-defined process and procedures for publishing and managing data. In this case the data can be simply pulled regularly into CKAN from the existing repositories.</p>
+
+<p>To facilitate this model we&#8217;ve developed a sophisticated and customisable &#8220;harvesting&#8221; mechanism which can fetch and import records from many different repository sources, including:</p>
+<ul>
+    <li>Geospatial CSW Servers (see <a href="../geospatial/">geospatial</a> for more information)</li>
+    <li>Existing web catalogues</li>
+    <li>Simple HTML index pages or Web Accessible Folders</li>
+    <li>ArcGIS, Geoportal Servers and Z39.50 databases</li>
+    <li>Other CKAN instances</li>
+</ul>
+<p>This functionality is used on <a href="http://catalog.data.gov">data.gov</a> to get data in from hundreds of their agencies, on <a href="http://data.gov.uk">data.gov.uk</a> to implement a Discovery Metadata Service used to fulfill the UK&#8217;s obligations under the <a href="http://inspire.jrc.ec.europa.eu/">EU INSPIRE directive</a>. It is also used on <a href="http://publicdata.eu">publicdata.eu</a> to pull in information from other catalogues to make them all searchable in one place.</p>
+
+</div>
+<div class="span6">
+<h3>Publisher tools</h3>
+<ul>
+    <li><strong>Publisher (Organization) admin dashboard</strong>: manage members, datasets, approve datasets to be public, manage harvest sources all from each organization admin page.</li>
+    <li><strong>Forms</strong>: Create portal or publisher specific forms that pre-fill certain fields or have additional required fields to fit individual requirements.</li>
+</ul>
+<h3>Workflow</h3>
+<p>Datasets can be public or private. If they are private they are only visible to the logged in members of their owning publishing Organization (e.g. Department of National Statistics). Admins can approve datasets for publication with our bulk editing tool which lets you search, facets and pick datasets to become public or private.</p>
+</div>
+</div>
+  </section>
+  <section id="search" class="full-width">
+    <h2>Search and Discovery</h2>
+<p>CKAN provides a rich search experience which allows for quick ‘Google-style’ keyword search as well as faceting by tags and browsing between related datasets. Users can quickly see what datasets are available, in which formats and with which licence, straight from the search results. All dataset fields are searchable (see below for the metadata we bring out into the interface).</p>
+<div class="row" style="width: 960px; background-image: url('/assets/img/search.png'); background-repeat: no-repeat; background-position: 20px top; min-height: 485px;">
+<div class="span3">
+<div style="padding: 270px 30px 10px 0;">
+<p><strong>Search on all dataset attributes</strong> – ausers can search on all dataset metadata, everything from title to tags to publisher name.</p>
+<p><strong>Full-text search</strong> – search full-text fields.</p>
+</div>
+</div>
+<div class="span3 offset6">
+<div style="padding: 10px 0 10px 30px; width: 190px;">
+<p><strong>Fuzzy-matching</strong> – option to search for closely matching terms instead of exact matches.</p>
+<p><strong>Faceted search</strong> – drill-down via facets – for example tags, format, licence, publisher. Ability to consecutively narrow the search by further facets allowing users to limit their search to datasets with specific formats or tags after they see the search results.</p>
+<p><strong>Search via API</strong> – All search facilities can also be made available over an API.</p>
+</div>
+</div>
+</div>
+&nbsp;
+<h2>Metadata</h2>
+<p>A CKAN portal provides a rich set of metadata for each dataset.</p>
+<div class="row" style="width: 960px; background-image: url('/assets/img/metadata.png'); background-repeat: no-repeat; background-position: center top; min-height: 670px;">
+<div class="span3">
+<div style="padding: 10px 30px 10px 0;">
+<p><strong>Title</strong> – allows intuitive labelling of the dataset for search, sharing and linking.</p>
+<p><strong>Unique identifier</strong> – dataset has a unique URL which is customizable by the publisher.</p>
+<p><strong>Groups</strong> – display of which groups the dataset belongs to if applicable. Groups (such as science data) allow easier data linking, finding and sharing amongst interested publishers and users.</p>
+<p><strong>Description</strong> – additional information describing or analysing the data. This can either be static or an editable wiki which anyone can contribute to instantly or via admin moderation.</p>
+<p><strong>Data preview</strong> – preview .csv data quickly and easily in browser to see if this is the dataset you want.</p>
+<p><strong>Revision history</strong> – CKAN allows you to display a revision history for datasets which are freely editable by users (as is thedatahub.org)</p>
+</div>
+</div>
+<div class="span3 offset3">
+<div style="padding-top: 525px;">
+<p><strong>Extra fields</strong> – these hold any additional information, such as location data (see geospatial feature) or types relevant to the publisher or dataset. How and where extra fields display is customizable.</p>
+</div>
+</div>
+<div class="span3">
+<div style="padding: 10px 0 10px 30px; width: 190px;">
+<p><strong>Licence</strong> – instant view of whether the data is available under an open licence or not. This makes it clear to users whether they have the rights to use, change and re-distribute the data.</p>
+<p><strong>Tags</strong> – see what labels the dataset in question belongs to. Tags also allow for browsing between similarly tagged datasets in addition to enabling better discoverability through tag search and faceting by tags.</p>
+<p><strong>Multiple formats (if provided)</strong> – see the different formats the data has been made available in quickly in a table, with any further information relating to specific files provided inline.</p>
+<p><strong>API key</strong> – allows access every metadata field of the dataset and ability to change the data if you have the relevant permissions via API.</p>
+</div>
+</div>
+</div>
+  </section>
+  <section id="geospatial" class="full-width">
+    <h2>Geospatial</h2>
+<p>CKAN has advanced geospatial features, covering data preview, search, and discovery.</p>
+<div class="row" style="width:960px; background-image:url(/assets/img/geospatial.jpg);background-repeat: no-repeat; background-position: right top; height: 445px;">
+<div class="span3">
+<h3>Preview</h3>
+<p>Where structured data with location information is loaded into CKAN&#8217;s DataStore, CKAN can plot the data on an interactive map. The screenshot shows a map view of a sample dataset, with markers showing individual data points and full details shown for records as they are selected.</p>
+<h3>Search</h3>
+<p>CKAN can understand a location associated with a dataset, and use this to offer geospatial search capabilities via the web interface and API. A user searching for datasets can filter the results by geographical location, specifying a bounding box to limit the area the are interested in. CKAN understands different co-ordinate geometries and parses location information accordingly.</p>
+</div>
+<div class="span6 offset3" style="margin-top:285px;">
+<h3>Discovery</h3>
+<p>To ensure your datasets can be easily integrated with other systems, CKAN includes tools to import geo-coded metadata in a number of formats and make it queriable (&#8216;discoverable&#8217;) according to the INSPIRE standard. It can import major metadata schemas such as  ISO19139, GEMINI 2.1 and FGDC can handle records hosted in a variety of ways, including the geospatial CSW standard, WAFs, ArcGIS portals, Geoportal Servers and Z39.50 databases. CKAN can also serve geospatial packages via its own CSW interface. The architecture is extensible, making it easy to support other standards and distribution services.</p>
+
+<p>For more detailed documentation on CKAN&#8217;s geospatial functionality, see the <a href="https://github.com/okfn/ckanext-spatial/blob/master/README.rst">Geospatial Capabilities documentation.</a></p>
+</div>
+</div>
+<div style="clear:left;"></div>
+  </section>
+  <section id="community" class="full-width">
+    <h2>Community</h2>
+<p>CKAN provides several key features that allow users of a CKAN portal to communicate and collaborate on data.</p>
+<div class="row" style="width:960px; background-image:url(/assets/img/community.png);background-repeat: no-repeat; background-position: 195px top; min-height: 485px;">
+<div class="span" style="padding: 10px 30px 10px 0; width: 190px;">
+<p><strong>Comments extension</strong> – users can add comments and discussion on a dataset. The extension can be enabled or disabled at any time.</p>
+<p><strong>Share</strong> – users can quickly and easily promote and discuss a dataset using twitter and facebook integration.</p>
+<p><strong>RSS/Atom feeds</strong> – create feeds of any changes and revisions to datasets and groups.</p>
+</div>
+<div class="span offset6" style="padding: 10px 0 10px 30px; width: 190px;">
+<p><strong>Follow extension</strong> – &#8216;follow&#8217; a dataset to be informed of any changes, updates or new activity.</p>
+<p><strong>To do extension</strong> – flag a dataset with an issue or instructions of what is missing or still &#8216;to do&#8217;. This allows for a community driven effort for improving and adding to metadata.</p>
+</div>
+</div>
+  </section>
+  <section id="visualise" class="full-width">
+    <h2>Visualise</h2>
+<p>CKAN’s data previewing tool has a host of powerful features for previewing data stored in the DataStore.</p>
+<div class="row" style="width:960px; background-image:url(/assets/img/visulisation.jpg);background-repeat: no-repeat; background-position: center top; min-height: 487px;">
+<div class="span" style="padding: 10px 30px 10px 0; width: 190px;">
+<p><strong>Table view</strong>: If structured data is uploaded or linked to CKAN as a .csv or Excel table, the DataStore loads it into a database, allowing CKAN to give a range of ways to view and process the data. Initially it is displayed as a table. The user can sort the data on particular columns, filter or facet by values, or hide columns entirely.</p>
+
+<p><strong>Graphing data</strong>: You can also display the data on a graph, choosing the variables on the axes and comparing a number of variables by graphing them together on the same y-axis.</p>
+</div>
+
+<div class="span offset6" style="padding: 10px 0 10px 30px; width: 190px;">
+<p><strong>Mapping data</strong>: If the table has columns that CKAN recognises as latitude and longitude, it can plot the data points on a map, which can be panned (dragged) and zoomed. Selecting a data point displays all the field values in the corresponding row.</p>
+
+<p><strong>Image data</strong>: CKAN’s previewing is not restricted to tabular data. Common image formats will be displayed, and if a resource is a web page, it will also be previewed directly in the CKAN dataset.</p>
+
+<p>
+<strong>Roll your own</strong>: CKAN&#8217;s built-in previews use the DataStore&#8217;s <a href="../API/">API</a>. If you have your own data previewing tools or are planning to build them, it&#8217;s easy to plug them into the API so that you can create visualisations on the fly, without the need for users to download the data.
+</p>
+
+</div>
+</div>
+  </section>
+  <section id="themable" class="full-width">
+    <h2>Themable</h2>
+<p>CKAN is highly customisable. See screenshots below for examples of various themed CKAN instances. You can customise the appearance of your CKAN portal yourself using the documentation here: <a href="http://docs.ckan.org/en/latest/theming.html" target="_blank">http://docs.ckan.org/en/latest/theming.html</a> or alternatively the CKAN team or a CKAN partner can do this for you as part of a support contract, CKAN Hosted plan or general set-up fee. <a href="/contact/">Contact us</a> for more details.</p>
+<div class="row ">
+<div class="span12 offset0 ">
+<p>Here are some examples of CKAN portals around the world:</p>
+
+
+        <style type='text/css'>
+            #gallery-1 {
+                margin: auto;
+            }
+            #gallery-1 .gallery-item {
+                float: left;
+                margin-top: 10px;
+                text-align: center;
+                width: 20%;
+            }
+            #gallery-1 img {
+                border: 2px solid #cfcfcf;
+            }
+            #gallery-1 .gallery-caption {
+                margin-left: 0;
+            }
+            /* see gallery_shortcode() in wp-includes/media.php */
+        </style>
+        <div id='gallery-1' class='gallery galleryid-798 gallery-columns-5 gallery-size-thumbnail'><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.01.34.png' title='Screen Shot 2011-09-23 at 17.01.34'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.01.34-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.01.34" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.02.45.png' title='Screen Shot 2011-09-23 at 17.02.45'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.02.45-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.02.45" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.04.28.png' title='Screen Shot 2011-09-23 at 17.04.28'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.04.28-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.04.28" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.07.30.png' title='Screen Shot 2011-09-23 at 17.07.30'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.07.30-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.07.30" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.08.42.png' title='Screen Shot 2011-09-23 at 17.08.42'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.08.42-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.08.42" /></a>
+            </dt></dl><br style="clear: both" /><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.16.28.png' title='Screen Shot 2011-09-23 at 17.16.28'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.16.28-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.16.28" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.17.14.png' title='Screen Shot 2011-09-23 at 17.17.14'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.17.14-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.17.14" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.19.30.png' title='Screen Shot 2011-09-23 at 17.19.30'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.19.30-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.19.30" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.21.27.png' title='Screen Shot 2011-09-23 at 17.21.27'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.21.27-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.21.27" /></a>
+            </dt></dl><dl class='gallery-item'>
+            <dt class='gallery-icon landscape'>
+                <a href='/assets/img/Screen-Shot-2011-09-23-at-17.25.19.png' title='Screen Shot 2011-09-23 at 17.25.19'><img width="150" height="150" src="/assets/img/Screen-Shot-2011-09-23-at-17.25.19-150x150.png" class="attachment-thumbnail" alt="Screen Shot 2011-09-23 at 17.25.19" /></a>
+            </dt></dl><br style="clear: both" />
+            <br style='clear: both;' />
+        </div>
+
+</div>
+</div>
+  </section>
+  <section id="store" class="full-width">
+    <h2>Store</h2>
+<p>As well as holding metadata and links to the offsite data, CKAN can provide secure storage for the data itself. When creating the dataset or resource, you can either link to data hosted elsewhere, or upload it in the same action as registering it on CKAN.</p>
+
+<div class="wp-caption alignnone" style="width: 638px"><img src="/assets/img/upload.png" alt="[Screenshot: uploading or linking data]" width="628" /><p class="wp-caption-text">Uploading or linking data</p></div>
+
+<p>Data can be stored in any format. For structured data, e.g. when a spreadsheet is uploaded, CKAN provides a rich API for the data itself, allowing users to query, retrieve and use data instantly from datasets in CKAN without needing to download or process it first. CKAN&#8217;s own visualisation tools use this to display data previews, graphs and visualisations of the data on the dataset resource page.</p>
+  </section>
+  <section id="history" class="full-width">
+    <h2>History</h2>
+<p>CKAN uses the Open Knowledge Foundation&#8217;s <a href="http://okfn.org/projects/vdm/" target="blank">Versioned Domain Model</a> (VDM) to keep a complete history of all edits and versions of dataset metadata.
+<div class="row" style="width:960px; background-image:url(/assets/img/history.png);background-repeat: no-repeat; background-position: 14px -4px; min-height: 486px;">
+<div class="span3">
+Using this feature, you can look at old versions, undo changes, look at a complete history of changes to a dataset, and compare different revisions.
+</div>
+<div class="span3 offset6">
+Change log messages show the reason for successive changes in the history of a dataset.</p>
+</div>
+</div>
+  </section>
+  <section id="extend" class="full-width">
+    <h2>Extend</h2>
+<p>CKAN allows you to pick and choose which features you want to use for your data portal. There are over 60 different <a href="http://wiki.ckan.org/List_of_Extensions" target="_blank">extensions</a>, all of which can be independently added in any configuration you choose. Anyone can build new extensions and contribute.</p>
+
+<p>Highlighted extensions:</p>
+<div class="row ">
+<div class="span3 offset0 ">
+<div class="wp-caption alignnone" style="width: 230px"><a href="http://farm8.staticflickr.com/7236/7090698133_6a2a399ce3_o.jpg"><img src="http://farm8.staticflickr.com/7236/7090698133_686825eded_m.jpg" alt="" width="220" /></a><p class="wp-caption-text"><strong>Google analytics extension</strong> for monitoring traffic on your data portal over time and tracking number of downloads per resource on the datasets themselves.</p></div>
+</div>
+<div class="span3 offset0 ">
+<div class="wp-caption alignnone" style="width: 230px"><a href="http://farm8.staticflickr.com/7213/7041897463_90302618a3_o.png"><img src="http://farm8.staticflickr.com/7213/7041897463_9fd063d0d5_m.jpg" alt="" width="220" /></a><p class="wp-caption-text"><strong>QA extension</strong> which checks the data download links and provides a broken link report by publisher. This also includes the 5 stars of openness assessment report on datasets.</p></div>
+</div>
+<div class="span3 offset0 ">
+<div class="wp-caption alignnone" style="width: 230px"><a href="http://farm8.staticflickr.com/7180/7020362679_286190f913_b.jpg"><img src="http://farm8.staticflickr.com/7180/7020362679_286190f913_m_d.jpg" alt="" width="220" /></a><p class="wp-caption-text"><strong>Datastore</strong> </p></div>
+</div>
+<div class="span3 offset0 ">
+<div class="wp-caption alignnone" style="width: 230px"><a href="http://farm8.staticflickr.com/7089/7072071969_9061f874b4_b.jpg"><img src="http://farm8.staticflickr.com/7089/7072071969_9061f874b4_m_d.jpg" alt="" width="220" /></a><p class="wp-caption-text"><strong>Geospatial</strong> This extension contains plugins that add geospatial capabilities to CKAN</p></div>
+</div>
+</div>
+<div class="row ">
+<div class="span3 offset0 ">
+<div class="wp-caption alignnone" style="width: 230px"><a href="http://farm6.staticflickr.com/5312/7159222958_46cc107030_b.jpg"><img src="http://farm6.staticflickr.com/5312/7159222958_46cc107030_m.jpg" alt="" width="220" /></a><p class="wp-caption-text"><strong>Social extension</strong> </p></div>
+</div>
+</div>
+  </section>
+  <section id="federate" class="full-width">
+    <h2>Federate</h2>
+<p>Because the <a href="../publish/#harvesting">harvesting</a> functionality can be used to pull in metadata from other CKAN instances, it can also be used to create a federated network of CKAN nodes which share data between each other.</p>
+<p>This is useful if, for example, a national portal wanted to aggregate information from local government CKAN instances, or if a topic-specific CKAN instance was created which aggregated a subset of datasets from other CKAN sources.</p>
+<p>CKAN follows the DCAT standard for data catalogue metadata, so data can also be federated from other non-CKAN catalogues.</p>
+  </section>
+  <section id="api" class="full-width">
+    <h2>API</h2>
+CKAN provides a rich RESTful JSON API for querying and accessing dataset information. The API gives access to:
+<div class="row" style="width: 960px; background-image: url('/assets/img/api.jpg'); background-repeat: no-repeat; background-position: right top; height: 455px;">
+<div class="span6" style="margin-top: 10px;">
+<ul>
+    <li>Full querying / searching (with all features of the main interface, including full-text search, querying on any attribute and faceting)</li>
+    <li>Full dataset information, including download links</li>
+    <li><a href="../store">Stored data</a></li>
+    <li>Dataset listings by publisher, or by theme, etc</li>
+    <li>Recent activity and additions (also available via RSS/Atom feed)</li>
+    <li>Statistics on dataset usage, such as number of downloads of dataset resources using the Google analytics extension</li>
+    <li>RDF version of the catalogue (using the rdf extension)</li>
+    <li>CSV &amp; JSON dumps of entire catalogue</li>
+</ul>
+<div style="width: 270px; margin-bottom: 20px;">
+
+<p>The API is fully documented at <a href="http://docs.ckan.org/en/latest/api.html" target="_blank">http://docs.ckan.org/</a>.</p>
+
+<p>In addition to the read API, a write API can be provided for authorised users that allows for full update of dataset information (metadata). This enables publishers to easily integrate dataset publication with existing tools and workflows.</p>
+</div>
+</div>
+</div>
+  </section>
+</div>
+
+<p><style>
+section {margin-top:20px; padding:40px 0;}.feature-image {padding-top:165px;padding-bottom:20px;background-repeat:no-repeat;background-position: center top;}#content h1,#content h2 {margin-top:0;} .subnav{width:100%}
+</style>
+<script>$(window).scroll(function(e){
+  $el = $('.subnav');
+  if ($(this).scrollTop() > 105 && $el.css('position') != 'fixed'){
+    $('.subnav').css({'position': 'fixed', 'top': '0px'});
+        $('body').removeClass('top');
+  }
+    if ($(this).scrollTop() < 105 && $el.css('position') == 'fixed') {
+      $('.subnav').css({'position': 'absolute', 'top': '0px'});
+        $('body').addClass('top');
+    }
+});
+$('body').addClass('sticky-subnav top');
+</script><script>
+   $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash,
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+</script><style type="text/css"> .pagetitle { display: none; } </style></p>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+        </div><!-- .page -->
+
+
+        </div><!-- .padder -->
+    </div><!-- #content -->
+</div>
