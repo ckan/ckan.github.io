@@ -1,9 +1,132 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="row">
+    <div id="content" class="span8 box extend">
+        <div class="padder">
+            <div class="span8">
+                {{content}}
+            </div>
+            <div class="span4">
+                <div id="sidebar" class="span4" role="complementary">
+                  <div class="widget">
+                        <div class="author-box small">
+                  <div class="avatar"><img src="http://www.gravatar.com/avatar/9a05859ce895e24f593846e0096993d6?d=http://ckan.okfn.org/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=50&amp;r=G" alt="Avatar of Rufus Pollock" class="avatar user-2-avatar" width="50" height="50"></div>
+                  <h3>Written by <br> <a rel="author" href="http://okfn.org/members/rgrp/" title="Rufus Pollock">Rufus Pollock</a></h3>
+                  <p><!--Replace this with buddypress field -->Dr. Rufus Pollock is Founder and co-Director of the Open Knowledge Foundation and a Shuttleworth Foundation Fellow.</p>
+                </div>
+                      </div>
+
+            <div class="padder">
+
+
+
+
+
+                    <p id="login-text">
+
+                        Please <a href="http://okfn.org/register/" title="Create an account">create an account</a> to get started.
+                    </p>
+
+
+                <form name="login-form" id="sidebar-login-form" class="standard-form" action="http://ckan.org/wp-login.php?wpe-login=okf" method="post">
+                    <label>Username<br>
+                    <input type="text" name="log" id="sidebar-user-login" class="input" value="" tabindex="97" mouseev="true" autocomplete="off" keyev="true" clickev="true" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); padding-right: 0px; background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat no-repeat;"></label>
+
+                    <label>Password<br>
+                    <input type="password" name="pwd" id="sidebar-user-pass" class="input" value="" tabindex="98" mouseev="true" autocomplete="off" keyev="true" clickev="true" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); padding-right: 0px; background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat no-repeat;"></label>
+
+                    <p class="forgetmenot"><label><input name="rememberme" type="checkbox" id="sidebar-rememberme" value="forever" tabindex="99"> Remember Me</label></p>
+
+
+            <input type="hidden" name="redirect_to" value="">
+
+                    <input type="submit" name="wp-submit" id="sidebar-wp-submit" value="Log In" tabindex="100">
+                    <input type="hidden" name="testcookie" value="1">
+                </form>
+
+
+
+
+            <div id="bfw-3" class="widget BFW"><h3 class="widgettitle">Subscribe via email</h3><form id="BFW" action="http://feedburner.google.com/fb/a/mailverify" method="post" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=ckanproject', 'popupwindow', 'scrollbars=yes,width=550,height=520')" target="popupwindow"><input id="BFW_email" type="text" name="email"><input type="hidden" value="ckanproject" name="uri"><input type="hidden" name="loc" value="en_US"><input id="BFW_submit" type="submit" value="Subscribe"></form></div>       <div id="recent-posts-2" class="widget widget_recent_entries">      <h3 class="widgettitle">Recent Posts</h3>       <ul>
+                            <li>
+                        <a href="http://ckan.org/2014/03/18/introducing-the-ckan-association/" title="Introducing the CKAN Association">Introducing the CKAN Association</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2014/03/13/improvements-to-the-ckan-roadmap-process/" title="Improvements to the CKAN Roadmap Process">Improvements to the CKAN Roadmap Process</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2014/03/11/improve-how-the-ckan-community-works-your-suggestions-wanted/" title="Improve how the CKAN Community Works – Your Suggestions Wanted">Improve how the CKAN Community Works – Your Suggestions Wanted</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2013/12/20/a-great-year-for-ckan/" title="2013 – A great year for CKAN">2013 – A great year for CKAN</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2013/12/18/ckan-meets-the-datatank/" title="CKAN meets The DataTank">CKAN meets The DataTank</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2013/12/13/translate-ckan-2-2/" title="Please help to translate CKAN 2.2">Please help to translate CKAN 2.2</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2013/11/28/ckan4rdm-st-andrews/" title="CKAN for research data management: a round-up from St Andrews">CKAN for research data management: a round-up from St Andrews</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2013/11/25/business-developer-open-data-software/" title="Business developer wanted for world leading open data publication software team">Business developer wanted for world leading open data publication software team</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2013/10/28/senior-python-developer-wanted/" title="Senior Python developer wanted for world leading open data publication software team">Senior Python developer wanted for world leading open data publication software team</a>
+                                </li>
+                            <li>
+                        <a href="http://ckan.org/2013/10/18/project-ckan/" title="Project CKAN">Project CKAN</a>
+                                </li>
+                        </ul>
+                </div><div id="text-7" class="widget widget_text">          <div class="textwidget"><br>
+        <a href="http://ckan.org/blog/archive/">More Blog Posts</a></div>
+                </div><div id="archives-2" class="widget widget_archive"><h3 class="widgettitle">Archives</h3>      <select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;"> <option value="">Select Month</option>   <option value="http://ckan.org/2014/03/"> March 2014 </option>
+            <option value="http://ckan.org/2013/12/"> December 2013 </option>
+            <option value="http://ckan.org/2013/11/"> November 2013 </option>
+            <option value="http://ckan.org/2013/10/"> October 2013 </option>
+            <option value="http://ckan.org/2013/09/"> September 2013 </option>
+            <option value="http://ckan.org/2013/08/"> August 2013 </option>
+            <option value="http://ckan.org/2013/07/"> July 2013 </option>
+            <option value="http://ckan.org/2013/06/"> June 2013 </option>
+            <option value="http://ckan.org/2013/05/"> May 2013 </option>
+            <option value="http://ckan.org/2013/04/"> April 2013 </option>
+            <option value="http://ckan.org/2013/03/"> March 2013 </option>
+            <option value="http://ckan.org/2013/02/"> February 2013 </option>
+            <option value="http://ckan.org/2013/01/"> January 2013 </option>
+            <option value="http://ckan.org/2012/12/"> December 2012 </option>
+            <option value="http://ckan.org/2012/11/"> November 2012 </option>
+            <option value="http://ckan.org/2012/10/"> October 2012 </option>
+            <option value="http://ckan.org/2012/09/"> September 2012 </option>
+            <option value="http://ckan.org/2012/08/"> August 2012 </option>
+            <option value="http://ckan.org/2012/07/"> July 2012 </option>
+            <option value="http://ckan.org/2012/06/"> June 2012 </option>
+            <option value="http://ckan.org/2012/05/"> May 2012 </option>
+            <option value="http://ckan.org/2012/04/"> April 2012 </option>
+            <option value="http://ckan.org/2012/03/"> March 2012 </option>
+            <option value="http://ckan.org/2012/02/"> February 2012 </option>
+            <option value="http://ckan.org/2012/01/"> January 2012 </option>
+            <option value="http://ckan.org/2011/12/"> December 2011 </option>
+            <option value="http://ckan.org/2011/11/"> November 2011 </option>
+            <option value="http://ckan.org/2011/10/"> October 2011 </option>
+            <option value="http://ckan.org/2011/09/"> September 2011 </option>
+            <option value="http://ckan.org/2011/08/"> August 2011 </option>
+            <option value="http://ckan.org/2011/07/"> July 2011 </option>
+            <option value="http://ckan.org/2011/06/"> June 2011 </option>
+            <option value="http://ckan.org/2011/05/"> May 2011 </option>
+            <option value="http://ckan.org/2011/04/"> April 2011 </option>
+            <option value="http://ckan.org/2011/03/"> March 2011 </option>
+            <option value="http://ckan.org/2011/02/"> February 2011 </option>
+            <option value="http://ckan.org/2011/01/"> January 2011 </option>
+            <option value="http://ckan.org/2010/12/"> December 2010 </option>
+         </select>
+        </div>
+
+    </div><!-- .padder -->
+
+  </div>
+    </div>
+
 </div>
